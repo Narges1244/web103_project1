@@ -11,7 +11,22 @@ const projects = [
             "Express.js",
             "PostgreSQL",
             "AWS"
-        ]
+        ],
+
+        problem:
+        "Genetic sequencing produces complex data that can be difficult to review and interpret efficiently.",
+
+        solution:
+            "Developed a web-based dashboard that processes, stores, and visualizes genetic data in a more organized and understandable format.",
+
+        contributions: [
+            "Developed frontend components using React.js",
+            "Built REST API endpoints with Node.js and Express",
+            "Designed and maintained PostgreSQL database tables",
+            "Integrated Python-based analysis workflows",
+            "Used AWS services for storage and processing",
+            "Migrated the application to a Linux server"
+    ]
     },
 
     {
@@ -28,7 +43,21 @@ const projects = [
         "HPO",
         "Exomiser",
         "PostgreSQL"
-    ]
+    ],
+    problem:
+    "Rare disease diagnosis can require reviewing many genetic variants together with complex patient symptoms.",
+
+solution:
+    "Built an AI-assisted workflow that extracts patient phenotypes, maps them to HPO terms, and combines phenotype information with variant-prioritization tools.",
+
+contributions: [
+    "Extracted HPO terms from clinical notes",
+    "Integrated Exomiser analysis results",
+    "Processed and stored genetic variant data",
+    "Built Express API routes for analysis workflows",
+    "Used LLMs to assist with clinical text processing",
+    "Connected phenotype and genomic information for rare disease analysis"
+]
 },
 {
     id: "prostate-cancer-ai",
@@ -43,7 +72,21 @@ const projects = [
         "Machine Learning",
         "NLP",
         "TCGA"
-    ]
+    ],
+    problem:
+    "Prostate cancer treatment decisions require combining clinical risk factors, medical guidelines, and molecular information.",
+
+solution:
+    "Designed a hybrid AI framework that extracts clinical information, performs deterministic risk classification, retrieves guideline evidence, and produces evidence-supported treatment options.",
+
+contributions: [
+    "Built an AI-based clinical information extraction workflow",
+    "Implemented deterministic prostate cancer risk classification",
+    "Created a RAG pipeline using clinical guidelines",
+    "Used embeddings for semantic retrieval",
+    "Evaluated the system using synthetic and TCGA patient data",
+    "Integrated RNA expression, mutation, and copy-number data"
+]
 },
 {
     id: "healthcare-data-analytics",
@@ -58,7 +101,21 @@ const projects = [
         "Pandas",
         "Scikit-learn",
         "NLP"
-    ]
+    ],
+    problem:
+    "Large healthcare datasets require extensive cleaning, validation, and analysis before meaningful patterns can be identified.",
+
+solution:
+    "Developed data analysis and machine learning workflows to clean healthcare data, identify patterns, and improve predictive performance.",
+
+contributions: [
+    "Cleaned and validated large healthcare datasets",
+    "Performed exploratory data analysis",
+    "Developed Scikit-learn machine learning models",
+    "Improved prediction accuracy by approximately 15%",
+    "Optimized data processing workflows",
+    "Used NLP and statistical analysis to generate healthcare insights"
+]
 },
 {
     id: "cnv-visualization",
@@ -72,7 +129,52 @@ const projects = [
         "NumPy",
         "Matplotlib",
         "Genomic Data Analysis"
-    ]
+    ],
+    problem:
+    "Copy-number variation data contains large numbers of genomic measurements that are difficult to interpret directly from raw files.",
+
+solution:
+    "Developed Python-based visualization tools that transform genomic copy-number data into chromosome-level plots and digital karyograms.",
+
+contributions: [
+    "Processed genomic copy-number data using Python",
+    "Developed chromosome-level CNV visualizations",
+    "Created digital karyogram representations",
+    "Analyzed genomic gain and loss patterns",
+    "Improved visual interpretation of complex genomic data"
+]
+},
+{
+    id: "pgx-report-generator",
+    title: "Pharmacogenomics Report Generator",
+    category: "Healthcare Software / Full-Stack Development",
+    description:
+        "Built a web application that generates pharmacogenomics reports to support personalized medication decisions.",
+    technologies: [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "Jinja2",
+        "WeasyPrint",
+        "Linux",
+        "Apptainer"
+    ],
+    problem:
+    "The laboratory relied on an external service to generate pharmacogenomics reports, increasing cost and reducing control over the reporting workflow.",
+
+solution:
+    "Developed an internal web application that processes pharmacogenomics information and automatically generates professional patient reports.",
+
+contributions: [
+    "Developed the backend using Python and Flask",
+    "Created report templates using HTML and Jinja2",
+    "Generated PDF reports with WeasyPrint",
+    "Integrated PostgreSQL for patient and result data",
+    "Containerized the application using Apptainer",
+    "Deployed the application on a Linux server"
+]
 }
 
 ];
