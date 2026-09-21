@@ -4,7 +4,10 @@ console.log(projectContainer);
 fetch("/api/projects")
     .then((response) => response.json())
     .then(data => {
-        const project = data[0];
+        data.forEach(project => {
+
+     
+    
         const article = document.createElement("article");
         console.log(project);
         const title = document.createElement("h2");
@@ -28,8 +31,9 @@ fetch("/api/projects")
         link.textContent = "Explore Project";
         link.href = `/projects/${project.id}`; // Replace with the actual project link if available
         article.appendChild(link);
+     });
 
-        
+
 
 
 
