@@ -1,4 +1,4 @@
-const projectContainer = document.getElementById("project-container");
+const projectContainer = document.getElementById("projects-container");
 console.log(projectContainer);
 
 fetch("/api/projects")
