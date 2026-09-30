@@ -1,9 +1,9 @@
 const projectDetails = document.getElementById("project-details");
 
 const pathParts = window.location.pathname.split("/");
-const projectId = pathParts[2];
+const projectSlug = pathParts[2];
 
-fetch(`/api/projects/${projectId}`)
+fetch(`/api/projects/${projectSlug}`)
     .then(response => {
         if (!response.ok) {
             throw new Error("Project not found");

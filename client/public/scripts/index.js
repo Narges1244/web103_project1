@@ -29,7 +29,7 @@ fetch("/api/projects")
 
         const link = document.createElement("a");
         link.textContent = "Explore Project";
-        link.href = `/projects/${project.id}`; // Replace with the actual project link if available
+        link.href = `/projects/${project.slug}`; // Replace with the actual project link if available
         article.appendChild(link);
      });
 

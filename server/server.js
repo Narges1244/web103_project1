@@ -1,10 +1,11 @@
 const   express = require("express");
 const path = require("path");
 const app = express();
-const projectsRouter = require("./routes/projects");
+require("dotenv").config();
+const projectsRoutes = require("./routes/projects");
 
 app.use(express.static(path.join(__dirname, "../client")));
-app.use("/api/projects", projectsRouter);
+app.use("/api/projects", projectsRoutes);
 
 
 
